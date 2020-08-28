@@ -1,0 +1,15 @@
+.contrib.framewor0k
+
+** Copy nvi to the docker container and use it to edit the sample.py file
+Replace 
+=tf.sort= with =tf.contrib.framework.sort=
+
+#+BEGIN_SRC sh -n :sps bash :async :results none
+  sed -i "s=tf.sort(==tf.contrib.framework.sort(=" src/sample.py
+#+END_SRC
+
+=.contrib.framework=
+
+#+BEGIN_SRC sh -n :sps bash :async :results none
+  docker cp /usr/bin/nvi ce96639a403115b44fef1aa2339dcea6107cecd63b9887db4f8bc561ee8df1a6:/usr/bin
+#+END_SRC
