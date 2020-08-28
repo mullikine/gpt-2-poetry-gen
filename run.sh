@@ -29,5 +29,6 @@ docker cp `alt -q nvi` "$container_id":/usr/bin
 
 # Set up poetry notebooks
 docker cp $MYGIT/kylemcdonald/python-utils "$container_id":/gpt-2/src/utils
+docker cp "$MYGIT/kylemcdonald/gpt-2-poetry/Generate GPT-2.py" "$container_id":/gpt-2/src/gen.py
 
 docker exec -it "$container_id" 'sh' '-c' '/bin/bash || /bin/zsh || sh'
