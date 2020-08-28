@@ -23,4 +23,7 @@ echo "$container_id"
 # Fix a bug
 docker exec -it "$container_id" 'sh' '-c' 'sed -i "s=tf.sort(=tf.contrib.framework.sort(=" src/sample.py'
 
+# Set up poetry notebooks
+docker cp $MYGIT/kylemcdonald/python-utils "$container_id":/gpt-2/src/utils
+
 docker exec -it "$container_id" 'sh' '-c' '/bin/bash || /bin/zsh || sh'
