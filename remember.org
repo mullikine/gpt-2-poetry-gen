@@ -1,6 +1,4 @@
-.contrib.framewor0k
-
-** Copy nvi to the docker container and use it to edit the sample.py file
+** Copy nvi to the docker container and use it to edit the =sample.py= file
 Replace 
 =tf.sort= with =tf.contrib.framework.sort=
 
