@@ -5,7 +5,7 @@ Replace
 =tf.sort= with =tf.contrib.framework.sort=
 
 #+BEGIN_SRC sh -n :sps bash :async :results none
-  sed -i "s=tf.sort(==tf.contrib.framework.sort(=" src/sample.py
+  sed -i "s=tf.sort(=tf.contrib.framework.sort(=" src/sample.py
 #+END_SRC
 
 =.contrib.framework=
